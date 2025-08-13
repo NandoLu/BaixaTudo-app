@@ -26,10 +26,11 @@ const styles = StyleSheet.create({
   inputGroup: {
     flexDirection: "row",
     alignItems: "center",
+    justifyContent: 'center',
     gap: 5,
   },
   textInput: {
-    flex: 1,
+    width: '70%',
     paddingVertical: 12,
     paddingHorizontal: 16,
     fontSize: 16,
@@ -41,13 +42,13 @@ const styles = StyleSheet.create({
   },
   btn: {
     backgroundColor: "#099844",
-    paddingVertical: 12,
-    paddingHorizontal: 20,
+    paddingHorizontal: 12,
     borderRadius: 8,
     elevation: 3,
+    width: '20%',
   },
   textBtn: {
-    fontSize: 16,
+    fontSize: 17,
     color: "#fff",
     fontWeight: "bold",
   },

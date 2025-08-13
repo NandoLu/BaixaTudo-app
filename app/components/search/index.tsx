@@ -3,8 +3,6 @@ import { Text, View, TextInput, StyleSheet, TouchableOpacity } from "react-nativ
 export default function Search() {
     return (
         <View style={styles.container}>
-            {/* <Text style={styles.textSearch}>Pesquise</Text> */}
-
             <View style={styles.containerTextInput}>
                 <TextInput
                     style={styles.textInput}
@@ -33,11 +31,6 @@ const styles = StyleSheet.create({
         gap: 4,
         width: '100%',
     },
-    // textSearch:{
-    //     fontSize: 15,
-    //     color: "#3e4340ff",
-    //     fontWeight: "400",
-    // },
     textInput: {
         paddingHorizontal: 5,
         fontSize: 14,
@@ -45,8 +38,8 @@ const styles = StyleSheet.create({
         justifyContent: "center",
         borderWidth: 1.2,
         borderRadius: 3,
-        color: "#393939",
-        borderColor: "#393939",
+        color: "#777777ff",
+        borderColor: "#777777ff",
         marginVertical: 10,
     },
     btn: {
@@ -54,9 +47,7 @@ const styles = StyleSheet.create({
         paddingHorizontal: 5,
         alignItems: 'center',
         justifyContent: "center",
-        borderWidth: 1.2,
         borderRadius: 3,
-        borderColor: "#393939",
         marginVertical: 10,
     },
     textBtn: {

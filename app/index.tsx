@@ -3,23 +3,23 @@ import Search from "./components/search";
 
 export default function Index() {
   return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
+    <View style={styles.container}>
       <Text style={styles.title}>Baixa Tudo</Text>
       <Search></Search>
     </View>
   );
 }
 
-const styles=StyleSheet.create({
-  title:{
-        fontSize: 20,
-        color: "#099844ff",
-        fontWeight: "500",
-    },
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+    backgroundColor: '#1d1d1dff'
+  },
+  title: {
+    fontSize: 20,
+    color: "#099844ff",
+    fontWeight: "500",
+  },
 })

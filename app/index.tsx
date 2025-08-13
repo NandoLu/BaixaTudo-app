@@ -20,6 +20,6 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 20,
     color: "#099844ff",
-    fontWeight: "500",
+    fontWeight: "bold",
   },
 })

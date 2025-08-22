@@ -1,13 +1,11 @@
 import { StyleSheet, Text, View } from "react-native";
 import Search from "../components/search";
-import NavBottom from "../components/navBottom";
 
-export default function Index() {
+export default function Download() {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Baixa Tudo</Text>
+      <Text style={styles.title}>Download</Text>
       <Search></Search>
-      <NavBottom></NavBottom>
     </View>
   );
 }

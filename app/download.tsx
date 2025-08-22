@@ -1,11 +1,14 @@
 import { StyleSheet, Text, View } from "react-native";
 import Search from "../components/search";
+import NavBottom from "../components/navBottom";
 
-export default function Download() {
+export default function Index() {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Download</Text>
-      <Search></Search>
+      <View style={styles.body}>
+        <Text style={styles.title}>Download</Text>
+      </View>
+      <NavBottom></NavBottom>
     </View>
   );
 }
@@ -16,6 +19,11 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     backgroundColor: '#1d1d1dff'
+  },
+  body: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
   },
   title: {
     fontSize: 20,

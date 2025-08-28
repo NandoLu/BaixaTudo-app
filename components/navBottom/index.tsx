@@ -1,4 +1,4 @@
-import { Text, View, StyleSheet, TouchableOpacity } from "react-native";
+import { Text, View, StyleSheet, TouchableOpacity, Image } from "react-native";
 
 export default function NavBottom() {
     return (
@@ -8,7 +8,10 @@ export default function NavBottom() {
                     <Text style={styles.textBtn}>Home</Text>
                 </TouchableOpacity>
                 <TouchableOpacity style={styles.btn}>
-                    <Text style={styles.textBtn}>Baixar</Text>
+                    <Image
+                        source={require('@/assets/images/logo.png')}
+                        style={styles.image}
+                    />
                 </TouchableOpacity>
             </View>
         </View>
@@ -39,10 +42,16 @@ const styles = StyleSheet.create({
         elevation: 4,
         width: '40%',
         height: '100%',
+        
     },
     textBtn: {
-        fontSize: 17,
+        fontSize: 12,
         color: "#fff",
         fontWeight: "bold",
+    },
+    image: {
+        width: 60,
+        height: 60,
+        resizeMode: 'cover',
     },
 });

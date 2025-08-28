@@ -1,4 +1,4 @@
-import { Text, View, TextInput, StyleSheet, Image, TouchableOpacity } from "react-native";
+import { View, TextInput, StyleSheet, Image, TouchableOpacity } from "react-native";
 
 export default function Search() {
   return (

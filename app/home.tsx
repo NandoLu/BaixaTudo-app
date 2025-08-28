@@ -1,13 +1,11 @@
 import { StyleSheet, Text, View } from "react-native";
-import Search from "../components/search";
 import NavBottom from "../components/navBottom";
 
-export default function Index() {
+export default function Home() {
   return (
     <View style={styles.container}>
       <View style={styles.body}>
-        <Text style={styles.title}>Baixa Tudo</Text>
-        <Search></Search>
+        <Text style={styles.title}>Home</Text>
       </View>
       <NavBottom></NavBottom>
     </View>
@@ -23,7 +21,6 @@ const styles = StyleSheet.create({
   },
   body: {
     flex: 1,
-    width: '80%',
     justifyContent: "center",
     alignItems: "center",
   },

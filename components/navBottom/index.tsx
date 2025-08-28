@@ -6,12 +6,12 @@ export default function NavBottom() {
         <View style={styles.container}>
             <View style={styles.inputGroup}>
                 <TouchableOpacity style={styles.btn}
-                    onPress={() => router.replace("/download")}
+                    onPress={() => router.replace("/home")}
                 >
                     <Text style={styles.textBtn}>Home</Text>
                 </TouchableOpacity>
                 <TouchableOpacity style={styles.btn}
-                    onPress={() => router.replace("/")}
+                    onPress={() => router.replace("/download")}
                 >
                     <Image
                         source={require('@/assets/images/logo.png')}
@@ -50,7 +50,7 @@ const styles = StyleSheet.create({
 
     },
     textBtn: {
-        fontSize: 12,
+        fontSize: 20,
         color: "#fff",
         fontWeight: "bold",
     },

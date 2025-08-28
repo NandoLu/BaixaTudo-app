@@ -1,4 +1,4 @@
-import { Text, View, TextInput, StyleSheet, TouchableOpacity } from "react-native";
+import { Text, View, TextInput, StyleSheet, Image, TouchableOpacity } from "react-native";
 
 export default function Search() {
   return (
@@ -10,7 +10,10 @@ export default function Search() {
           placeholderTextColor="#aaa"
         />
         <TouchableOpacity style={styles.btn}>
-          <Text style={styles.textBtn}>Baixar</Text>
+          <Image
+            source={require('../../assets/images/logo.png')}
+            style={styles.image}
+          />
         </TouchableOpacity>
       </View>
     </View>
@@ -30,7 +33,7 @@ const styles = StyleSheet.create({
     gap: 5,
   },
   textInput: {
-    width: '70%',
+    flex: 1,
     paddingVertical: 12,
     paddingHorizontal: 16,
     fontSize: 16,
@@ -42,14 +45,16 @@ const styles = StyleSheet.create({
   },
   btn: {
     backgroundColor: "#099844",
-    paddingHorizontal: 12,
+    width: 50,
+    height: 50,
     borderRadius: 8,
     elevation: 3,
-    width: '20%',
+    justifyContent: 'center',
+    alignItems: 'center',
   },
-  textBtn: {
-    fontSize: 17,
-    color: "#fff",
-    fontWeight: "bold",
+  image: {
+    width: 50,
+    height: 50,
+    resizeMode: 'cover',
   },
 });

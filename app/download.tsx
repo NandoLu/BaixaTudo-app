@@ -1,12 +1,11 @@
 import { StyleSheet, Text, View } from "react-native";
-import Search from "../components/search";
 import NavBottom from "../components/navBottom";
 
-export default function Index() {
+export default function Download() {
   return (
     <View style={styles.container}>
       <View style={styles.body}>
-        <Text style={styles.title}>Download</Text>
+        <Text style={styles.title}>Downloads</Text>
       </View>
       <NavBottom></NavBottom>
     </View>
@@ -26,7 +25,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   title: {
-    fontSize: 20,
+    fontSize: 45,
     color: "#099844ff",
     fontWeight: "bold",
   },

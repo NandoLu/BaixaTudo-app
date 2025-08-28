@@ -6,12 +6,12 @@ export default function NavBottom() {
         <View style={styles.container}>
             <View style={styles.inputGroup}>
                 <TouchableOpacity style={styles.btn}
-                onPress={() => router.replace("/")}
+                    onPress={() => router.replace("/download")}
                 >
                     <Text style={styles.textBtn}>Home</Text>
                 </TouchableOpacity>
                 <TouchableOpacity style={styles.btn}
-                    onPress={() => router.replace("/download")}
+                    onPress={() => router.replace("/")}
                 >
                     <Image
                         source={require('@/assets/images/logo.png')}

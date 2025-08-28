@@ -22,7 +22,8 @@ export default function Search() {
 
 const styles = StyleSheet.create({
   container: {
-    padding: 20,
+    width: '100%',
+    paddingVertical: 20,
     flexDirection: 'column',
     justifyContent: "center",
   },
@@ -30,10 +31,10 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     alignItems: "center",
     justifyContent: 'center',
-    gap: 5,
+    gap: 7,
   },
   textInput: {
-    flex: 1,
+    flex:1,
     paddingVertical: 12,
     paddingHorizontal: 16,
     fontSize: 16,

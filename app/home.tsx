@@ -5,7 +5,6 @@ export default function Home() {
   return (
     <View style={styles.container}>
       <View style={styles.body}>
-        <Text style={styles.title}>Home</Text>
       </View>
       <NavBottom></NavBottom>
     </View>
@@ -21,8 +20,8 @@ const styles = StyleSheet.create({
   },
   body: {
     flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
+    // justifyContent: "center",
+    // alignItems: "center",
   },
   title: {
     fontSize: 45,

@@ -16,7 +16,9 @@
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#1d1d1dff"
       },
-      "edgeToEdgeEnabled": true
+      "edgeToEdgeEnabled": true,
+      "package": "com.luizf.baixatudo",
+      "versionCode": 1
     },
     "web": {
       "bundler": "metro",
@@ -32,6 +34,13 @@
           "imageWidth": 200,
           "resizeMode": "contain",
           "backgroundColor": "1d1d1dff"
+        }
+      ],
+      [
+        "expo-media-library",
+        {
+          "isAccessMediaLocationEnabled": true,
+          "savePhotosOnAndroid": true
         }
       ]
     ],

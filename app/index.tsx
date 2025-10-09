@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, View } from "react-native";
 import NavBottom from "../components/navBottom";
 
 export default function Home() {

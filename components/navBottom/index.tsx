@@ -6,7 +6,7 @@ export default function NavBottom() {
         <View style={styles.container}>
             <View style={styles.inputGroup}>
                 <TouchableOpacity style={styles.btn}
-                    onPress={() => router.replace("/home")}
+                    onPress={() => router.replace("/")}
                 >
                     <Text style={styles.textBtn}>Home</Text>
                 </TouchableOpacity>

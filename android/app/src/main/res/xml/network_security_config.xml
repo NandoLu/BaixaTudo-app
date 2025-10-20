@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <!-- Permite conexões HTTP (cleartext) para endereços IP locais -->
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">192.168.1.234</domain>
+        <domain includeSubdomains="true">192.168.1.0/24</domain>
+        <domain includeSubdomains="true">10.0.2.2</domain>
+        <!-- O Android Studio e o Expo Go usam 10.0.2.2 para o localhost/IP de desenvolvimento -->
+    </domain-config>
+
+    <!-- Configuração padrão para o restante do tráfego (Ex: Google/YouTube) -->
+    <base-config cleartextTrafficPermitted="false">
+        <trust-anchors>
+            <certificates src="system" />
+        </trust-anchors>
+    </base-config>
+</network-security-config>

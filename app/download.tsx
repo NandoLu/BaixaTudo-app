@@ -6,7 +6,7 @@ export default function Download() {
   return (
     <View style={styles.container}>
       <View style={styles.body}>
-        <Text style={styles.title}>Baixa Tudo</Text>
+        <Text style={styles.title}>Baixa Tudo <Text style={styles.version}>1.0</Text></Text>
         <Search></Search>
       </View>
       <NavBottom></NavBottom>
@@ -30,6 +30,11 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 45,
     color: "#099844ff",
+    fontWeight: "bold",
+  },
+  version: {
+    fontSize: 15,
+    color: "#a7a7a7ff",
     fontWeight: "bold",
   },
 })
